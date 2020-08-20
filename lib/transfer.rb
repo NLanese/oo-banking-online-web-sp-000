@@ -56,6 +56,7 @@ class Transfer
     if (@status == "complete")
       @sender.balance = @prevSendBal
       @receiver.balance = @prevRecBal
+      @status = "reversed"
     end
   end
 
