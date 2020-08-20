@@ -9,7 +9,7 @@ class BankAccount
     @name = inputName
   end
 
-  def name 
+  def name
     @name
   end
 
