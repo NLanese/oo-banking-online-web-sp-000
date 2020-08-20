@@ -46,4 +46,8 @@ class BankAccount
     @status = "closed"
   end
 
+  def status=(input)
+    @status = input
+  end
+
 end
