@@ -33,7 +33,7 @@ class BankAccount
       else
         return false
       end
-    else 
+    else
       return false
     end
   end
