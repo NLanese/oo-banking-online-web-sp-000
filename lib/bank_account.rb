@@ -18,4 +18,8 @@ class BankAccount
     @status
   end
 
+  def deposit(input)
+    @balance = @balance + input
+  end
+
 end
