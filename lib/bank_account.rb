@@ -6,10 +6,6 @@ class BankAccount
     @status = "open"
   end
 
-  def name=(inputName)
-    @name = inputName
-  end
-
   def name
     @name
   end
