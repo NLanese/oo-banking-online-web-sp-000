@@ -5,6 +5,8 @@ class Transfer
     @receiver = receiver
     @amount = amt
     @status = "pending"
+    @prevSendBal = sender.balance
+    @prevRecBal = receiver.balance
   end
 
   def valid?
@@ -49,5 +51,8 @@ class Transfer
       return
     end
   end
+
+  def reverse_transfer
+    
 
 end
