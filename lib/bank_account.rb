@@ -22,4 +22,20 @@ class BankAccount
     @balance = @balance + input
   end
 
+  def display_balance
+    return "Your balance is #{@balance}"
+  end
+
+  def valid?
+    if (@balance < 0)
+      if (@status == "open")
+        return true
+      else
+        return false
+      end
+    else 
+      return false
+    end
+  end
+
 end
